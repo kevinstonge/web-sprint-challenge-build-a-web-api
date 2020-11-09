@@ -61,10 +61,22 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
+   Node.js allows servers to run javascript so that developers can use the same programming language for both front-end development and back-end development
+   Node.js is single-threaded which makes coding less complex at the expense of performance
+   Node.js supports asynchronous code, which helps improve performance by not forcing code execution to wait for functions that take a long time to complete
+   Node.js has a vast library of packages written by other developers that you can easily import into your projects using npm
 1. Understand and explain the use of Middleware?
+   In the context of Express, middleware are functions that are passed into Express methods (like .get, .post) to add functionality, improve modularity, and reduce redundancy in code.
 1. The basic principles of the REST architectural style.
+   REST stands for "Representational state transfer", and is software that is typically used to perform CRUD operations (create, read, update, delete) on a database.
+   Some important principles that REST APIs should follow are:
+   everything is a resource that is available via a unique URI
+   resources can have multiple representations
+   communication is stateless (sequence doesn't matter) and occurs via HTTP methods (GET, POST, etc)
 1. Understand and explain the use of Express Routers.
+   Express.Router provides the ability to handle different HTTP requests with different blocks of code easily. A router can send all requests to the path "/api/users" to express methods that deal with the 'users' resource, which also provides the benefit of attaching user-related middleware to only that route.
 1. Describe tooling used to manually test the correctness of an API.
+   A common tool used to test an API is Postman. It is an application that lets you structure your HTTP requests and view the response data.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
